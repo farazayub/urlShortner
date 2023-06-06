@@ -112,7 +112,7 @@ function App() {
       <Input id="backhalf" placeholder="Slug (Optional)" />
       <br></br>
       <Button onClick={shortenLink} />
-      <p className='footer'>Made with ❤️ by <a className='portfolio-link' href='https://prasoon.codes/' target='_blank'>Prasoon Soni</a></p>
+      
     </div>
   );
 }
