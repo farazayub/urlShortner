@@ -4,12 +4,13 @@ const cors = require('cors')
 const port = 5000
 const connectToDatabase = require('./database/connection')
 connectToDatabase()
+const REACT_APP_BASE_URL="http://localhost:3000";
 
 app.use(cors())
 app.use(express.json())
 
 app.get('/', (req, res) => {
-    res.redirect("https://urlshortner.prasoon.codes")
+    res.redirect({REACT_APP_BASE_URL})
 })
 
 app.use('/short', require('./routes/shortUrl'))
